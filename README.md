@@ -17,6 +17,9 @@ Tested with:
 
 _NOTE_: to show installed plugins, exec `$ vagrant plugin list`
 
+
+_NOTE_: to show installed plugins, exec `$ vagrant plugin list`
+
 ## Execution
 
 Execute `$ vagrant up` to initialize (and provision only the first time) the Ubuntu VM with Docker
