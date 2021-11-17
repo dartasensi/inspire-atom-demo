@@ -1,0 +1,43 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+    xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://a9.com/-/spec/opensearch/1.1/ http://inspire-geoportal.ec.europa.eu/schemas/inspire/atom/1.0/opensearch.xsd">
+	
+    <ShortName>Carta Geologica 1:100k ATOM Download Service</ShortName>
+    <Description>Search Description for Geology 100K Atom Feed</Description>
+    
+	<!-- URL of this document (link to self) -->	
+    <Url type="application/opensearchdescription+xml" rel="self"
+        template="https://sgi3.isprambiente.it/download/OpenSearchDescription-GE100k.xml"/>
+    
+	<!-- Generic URL template for browser integration -->
+    <Url type="text/html" rel="results"
+        template="https://sgi3.isprambiente.it/download/OpenSearch-GE.php?q={searchTerms}"/>
+		
+    <!--  Operations Metadata Parameter  -->
+	
+	  <!--Describe Spatial Data Set Operation request URL template to be used in order to retrieve the description of Spatial Object Types in a Spatial Data Set-->
+    <Url type="application/atom+xml" rel="describedby"
+        template="https://sgi3.isprambiente.it/download/OpenSearch-GE.php?spatial_dataset_identifier_code={inspire_dls:spatial_dataset_identifier_code?}&amp;spatial_dataset_identifier_namespace={inspire_dls:spatial_dataset_identifier_namespace?}&amp;language={language?}&amp;q={searchTerms?}"/>
+    
+	<!-- Get Spatial Data Set Operation request URL template to be used in order to retrieve a Spatial Data Set-->
+    <Url type="application/atom+xml" rel="results"
+        template="https://sgi3.isprambiente.it/download/OpenSearch-GE.php?spatial_dataset_identifier_code={inspire_dls:spatial_dataset_identifier_code?}&amp;spatial_dataset_identifier_namespace={inspire_dls:spatial_dataset_identifier_namespace?}&amp;crs={inspire_dls:crs?}&amp;language={language?}&amp;q={searchTerms?}"/>
+	    
+	<Contact>portalesgi@isprambiente.it</Contact>
+    <Tags>GE100k</Tags>
+    <LongName>GE100K-AtomFeed</LongName>
+	
+     <!-- List of available Spatial Dataset Identifiers  -->
+    <Query role="example"
+        inspire_dls:spatial_dataset_identifier_namespace="http://sgi.isprambiente.it"
+        inspire_dls:spatial_dataset_identifier_code="ispra_rm:Carta_Geologica_Armonizzata_1:100k_DT"
+        inspire_dls:crs="http://www.opengis.net/def/crs/EPSG/0/4258" language="en"
+        title="Carta_Geologica_Armonizzata_100k_DT" count="1"/>
+		
+    <Developer>ISPRA-Dipartimento per il Servizio Geologico d'Italia</Developer>
+	
+    <!--Supported Languages, Default Language (for consistency with the other TGs)-->
+    <!--Languages  supported by the service. The first language is the default language-->
+    <Language>en-gb</Language>
+</OpenSearchDescription>

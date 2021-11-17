@@ -1,0 +1,45 @@
+<?php 
+$returnFile = false; 
+/* foreach (apache_request_headers() as $name => $value) {
+	//echo("$name: $value\n");
+	if ($name=="Accept" && $value=="application/atom+xml"){
+		$returnFile = true;
+	}
+} */
+echo ("returnFile: $returnFile");
+
+	$q= $_GET['q'];
+
+	$uriCode = $_GET['spatial_dataset_identifier_code']; 
+	if (!$uriCode)
+	{ 
+		if (!$q) 
+		{ 
+		header("Location: https://sgi3.isprambiente.it/download/GE.atom.TOP.en.xml"); 
+		exit;
+		} 
+		$uriCode = $q;
+	}
+	
+$uriNamespace= $_GET['spatial_dataset_identifier_namespace'];
+$crs= $_GET['crs'];
+
+$language= $_GET['language'];
+if (!$language || $language == "*"){
+	$language = "en";
+}
+if ($language != 'en' && $language != 'it'){
+	die( "Only en and it languages are supported" );
+}
+
+if ($uriCode == "ispra_rm:Carta_Geologica_Armonizzata_1:100k_DT"){
+	if ($returnFile){
+		header("Location: https://sgi3.isprambiente.it/download/GE.atom.en.xml");
+		} else{
+			header("Location: https://sgi3.isprambiente.it/download/GE.atom.en.xml");
+			} 
+	exit;
+	}
+	
+echo 'Not found'; 
+?>
