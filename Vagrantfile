@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
   # #####
   # ubuntu 20.04 LTS
   _vm_box = "ubuntu/focal64"
-  # _vm_name = "vg-ubuntu-docker"
+  _vm_name = "inspire-atom-demo"
   _vm_hostname = "main.example.com"
 
   # #####

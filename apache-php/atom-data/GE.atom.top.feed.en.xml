@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:opensearchextensions="http://example.com/opensearchextensions/1.0/" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xsi:schemaLocation="http://www.w3.org/2005/Atom http://inspire-geoportal.ec.europa.eu/schemas/inspire/atom/1.0/atom.xsd" xml:lang="en" xml:base="http://inspire-geoportal.ec.europa.eu/demos/ccm/">
+  <!--Response language is the value of xml:lang-->
+  <!-- Download Service Feed title -->
+  <title>Carta Geologica 1:100k ATOM Download Service</title>
+  <!-- feed subtitle -->
+  <subtitle>Download service for Carta Geologica in scala 1:100.000 armonizzata.</subtitle>
+  <!-- links to the relevant Download Service ISO 19139 metadata-->
+  <link href="ispra_rm%3A2020Geologica100k_SVD" rel="describedby" type="application/xml"/>
+  <!-- self-referencing link to this feed -->
+  <link href="GE.atom.top.feed.en.xml" rel="self" type="application/atom+xml" hreflang="en" title="This document"/>
+  <!-- links to Open Search definition file-->
+  <link rel="search" href="OpenSearchDescription-GE100k.xml" type="application/opensearchdescription+xml" title="Open Search Description for GE download service"/>
+  <!-- identifier -->
+  <id>http://inspire.example.org/data/GE.atom.top.feed.en.xml</id>
+  <!-- rights, access restrictions -->
+  <rights>License CC-BY 4.0</rights>
+  <!-- date/time of last update of feed-->
+  <updated>2021-09-23T12:00:00Z</updated>
+  <!-- author contact information -->
+  <author>
+    <name>INSPIRE Contact point</name>
+    <email>inspire@example.org</email>
+  </author>
+  <!-- entry for a "Dataset Feed" for a pre-defined dataset -->
+  <entry>
+    <!-- title for "Dataset Feed" for pre-defined dataset -->
+    <title>Carta_Geologica_Armonizzata_100k_DT</title>
+    <!-- Spatial Dataset Unique Resource Identifier for this dataset-->
+    <inspire_dls:spatial_dataset_identifier_code>ispra_rm:Carta_Geologica_Armonizzata_1:100k_DT</inspire_dls:spatial_dataset_identifier_code>
+    <inspire_dls:spatial_dataset_identifier_namespace>http://inspire.example.org</inspire_dls:spatial_dataset_identifier_namespace>
+    <!-- link to ISO (INSPIRE) dataset metadata record -->
+    <link rel="describedby" href="ispra_rm%3AGeo100k_DT" type="application/xml" hreflang="en" title="Dataset Metadata"/>
+    <!-- link to "Dataset Feed" for pre-defined dataset-->
+    <link rel="alternate" href="GE.atom.ds.feed.en.xml" type="application/atom+xml" hreflang="en" title="Feed containing the dataset"/>
+    <!-- identifier for "Dataset Feed" for pre-defined dataset -->
+    <id>http://inspire.example.org/data/GE.atom.ds.feed.en.xml</id>
+    <!-- last date/time this entry was published -->
+    <published>2020-11-22T00:00:00Z</published>
+    <!-- last date/time pre-defined dataset was updated -->
+    <updated>2021-11-08T12:00:07Z</updated>
+    <!-- CRSs in which the pre-defined Dataset is available -->
+    <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+    <author>
+      <name>INSPIRE Contact point</name>
+      <email>inspire@example.org</email>
+    </author>
+    <!-- human readable summary of the pre-defined dataset -->
+    <summary type="html"><![CDATA[<div>Carta Geologica Armonizzata INSPIRE - GeoSCIml</div><div> Available downloads (media type <a href="http://inspire.jrc.ec.europa.eu/media-types/" target="_blank"><em>application/x-gmz</em></a>): <br><a href="https://sgi3.isprambiente.it/download/gml_zip/Carta_geologica_100k_INSPIRE-GE_nord.zip">Carta Geologica Armonizzata 100k INSPIRE nord</a> <br><a href="https://sgi3.isprambiente.it/download/gml_zip/Carta_geologica_100k_INSPIRE-GE_centro.zip">Carta Geologica Armonizzata 100k INSPIRE centro</a> <br><a href="https://sgi3.isprambiente.it/download/gml_zip/Carta_geologica_100k_INSPIRE-GE_sud-isole.zip">Carta Geologica Armonizzata 100k INSPIRE sud-isole</a> <br><a href="https://sgi3.isprambiente.it/download/gml_zip/Carta_geologica_100k_GeoSciML_nord.zip">Carta Geologica Armonizzata 100k GeoSciML nord</a> <br><a href="https://sgi3.isprambiente.it/download/gml_zip/Carta_geologica_100k_GeoSciML_centro.zip">Carta Geologica Armonizzata 100k GeoSciML centro</a> <br><a href="https://sgi3.isprambiente.it/download/gml_zip/Carta_geologica_100k_GeoSciML_sud-isole.zip">Carta Geologica Armonizzata 100k GeoSciML sud-isole</a> <br></div> 	]]></summary>
+  </entry>
+</feed>
